@@ -1,7 +1,17 @@
 import os
+import socket
 import http.server
 import socketserver
 from pathlib import Path
+
+# setup a 1 second timeout for the ports
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.settimeout(1)
+
+class MyTCPServer(socketserver.TCPServer):
+    def server_bind(self):
+        self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.socket.bind(self.server_address)
 
 servers = []
 PORTS = [7001,7002,7003]
@@ -17,7 +27,7 @@ def start_server(server_port):
     f.close()
 
     Handler = http.server.SimpleHTTPRequestHandler
-    with socketserver.TCPServer(("", server_port), Handler) as httpd:
+    with MyTCPServer(("", server_port), Handler) as httpd:
         try:
             print("serving at port:", server_port)
             os.chdir(server_root)
