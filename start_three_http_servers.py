@@ -58,12 +58,12 @@ def start_server(server_port):
     # start/stop the HTTP server
     with MyTCPServer(("", server_port), handler) as httpd:
         try:
-            print("serving at port:", server_port)
+            print("serving on port", server_port)
             os.chdir(server_root)
             httpd.serve_forever()
         except KeyboardInterrupt:
             httpd.shutdown()
-            print("stopping at port:", server_port)
+            print("stopping on port", server_port)
 
 # start a fork for each port
 for port in PORTS:
