@@ -2,7 +2,7 @@
 apt update
 
 # Install nginx, php, mariadb, and elinks
-apt install -y nginx
+apt install -y nginx unzip
 
 # Remove the default configuration
 unlink /etc/nginx/sites-enabled/default
@@ -11,7 +11,7 @@ unlink /etc/nginx/sites-enabled/default
 cp /home/vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 
 # Install the demo site
-mkdir /var/www/wisomdpetmed.local
+mkdir /var/www/wisdomdpetmed.local
 echo "site goes here" > /var/www/wisomdpetmed.local/index.html
 
 # Restart and check the status of everything
