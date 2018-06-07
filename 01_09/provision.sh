@@ -8,7 +8,7 @@ apt-get install -y nginx
 unlink /etc/nginx/sites-enabled/default
 
 # Install the new configuration
-cp /home/vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
+cp /vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 
 # Install the demo site
 mkdir /var/www/wisdomdpetmed.local
