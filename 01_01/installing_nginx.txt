@@ -6,7 +6,7 @@
 # RUN THESE COMMANDS ON THE VIRTUAL MACHINE
     sudo su -
     apt update
-    apt upgrade -y
+    apt upgrade -y # this step is optional
     apt install nginx -y
     nginx -v
     systemctl status nginx
