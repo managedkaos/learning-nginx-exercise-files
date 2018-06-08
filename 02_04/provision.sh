@@ -33,6 +33,13 @@ y
 y
 EOF
 
+# Set up appointment database
+mysql -u root -p123 < /vagrant/appointment_database_setup.sql
+
 # Restart and check the status of everything
 systemctl restart nginx
 systemctl status nginx.service --no-pager
+systemctl restart php7.2-fpm
+systemctl status php7.2-fpm.service --no-pager
+systemctl restart mysqld
+systemctl status mysqld.service --no-pager
