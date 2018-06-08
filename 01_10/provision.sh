@@ -12,10 +12,9 @@ cp /vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 
 # Install the demo site
 mkdir /var/www/wisdomdpetmed.local
-mkdir /var/www/wisdomdpetmed.local/images
-
-echo "site goes here" > /var/www/wisdomdpetmed.local/index.html
-echo "error page goes here" > /var/www/wisdomdpetmed.local/404.html
+unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/www/wisdomdpetmed.local
+find /var/www/wisdomdpetmed.local -type f -exec chmod 644 {} \; -print
+find /var/www/wisdomdpetmed.local -type d -exec chmod 755 {} \; -print
 
 # Restart and check the status of everything
 systemctl restart nginx
