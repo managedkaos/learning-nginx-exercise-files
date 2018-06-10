@@ -40,6 +40,8 @@ EOF
 
 # Set up appointment database
 mysql -u root -p123 < /vagrant/appointment_database_setup.sql
+
+# Insert the appointment data
 mysql -u admin -padmin appointments < /vagrant/appointment_database.sql
 
 # Restart and check the status of everything
