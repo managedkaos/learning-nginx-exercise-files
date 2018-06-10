@@ -23,3 +23,5 @@ chmod +r /var/www/wisdomdpetmed.local/info.php
 # Restart and check the status of everything
 systemctl restart nginx
 systemctl status nginx.service --no-pager
+systemctl restart php7.2-fpm
+systemctl status php7.2-fpm.service --no-pager
