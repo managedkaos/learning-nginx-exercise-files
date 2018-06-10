@@ -20,6 +20,11 @@ find /var/www/wisdomdpetmed.local -type d -exec chmod 755 {} \; -print
 cp /vagrant/info.php /var/www/wisdomdpetmed.local
 chmod +r /var/www/wisdomdpetmed.local/info.php
 
+# Install the php admin script
+mkdir /var/www/wisdomdpetmed.local/admin
+cp /vagrant/index.php /var/www/wisdomdpetmed.local/admin
+chmod +r /var/www/wisdomdpetmed.local/admin/index.php
+
 # Secure MySQL
 # !!Not for production use!! :D
 mysql_secure_installation <<EOF
