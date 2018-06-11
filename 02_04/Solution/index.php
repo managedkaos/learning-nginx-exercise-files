@@ -84,7 +84,7 @@
 <body>
     <h1>Wisdom Pet Medicine Appointments</h1>
     <?php
-        echo "<p align='center'>Today is " . date("Y-m-d") . "</p>";
+        echo "<p align='center'>Today is " . date("m/d/Y") . "</p>";
     ?>
     <table class="data-table">
         <tr>
