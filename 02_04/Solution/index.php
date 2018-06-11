@@ -17,3 +17,11 @@ if (!$query) {
 	die ('SQL Error: ' . mysqli_error($conn));
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointments</title>
+</head>
+<body>    
+</body>
+</html>
