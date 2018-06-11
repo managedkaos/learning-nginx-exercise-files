@@ -55,10 +55,8 @@
 		.data-table tbody td {
 			color: #353535;
 		}
-		.data-table tbody td:first-child,
-		.data-table tbody td:nth-child(4),
-		.data-table tbody td:last-child {
-			text-align: right;
+		.data-table tbody td {
+			text-align: left;
 		}
 
 		.data-table tbody tr:nth-child(odd) td {
@@ -72,7 +70,7 @@
 		/* Table Footer */
 		.data-table tfoot th {
 			background-color: #e5f5ff;
-			text-align: right;
+			text-align: left;
 		}
 		.data-table tfoot th:first-child {
 			text-align: left;
@@ -88,12 +86,12 @@
     <?php
         echo "<p align='center'>Today is " . date("Y-m-d") . "</p>";
     ?>
-    <table>
+    <table class="data-table">
         <tr>
-            <th align='left'>Pet Name</th>
-            <th align='left'>Owner Name</th>
-            <th align='left'>Appointment Date</th>
-            <th align='left'>Reason for Appointment</th>
+            <th>Pet Name</th>
+            <th>Owner Name</th>
+            <th>Appointment Date</th>
+            <th>Reason for Appointment</th>
         </tr>
         <?php
             $conn = mysqli_connect('localhost', 'admin', 'admin', 'appointments');
@@ -109,7 +107,7 @@
 
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td align='left'>". $row["Pet_Name"] ."</td><td align='left'>". $row["Owner_Name"] ."</td><td align='left'>". $row["Appointment_date"] ."</td><td>". $row["Reason_for_appointment"] ."</td></tr>";
+                    echo "<tr><td>". $row["Pet_Name"] ."</td><td>". $row["Owner_Name"] ."</td><td>". $row["Appointment_date"] ."</td><td>". $row["Reason_for_appointment"] ."</td></tr>";
                 }
             }
         ?>
