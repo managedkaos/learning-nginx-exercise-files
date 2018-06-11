@@ -8,6 +8,6 @@ end
 
 puts "-------------------------------------------------"
 puts "Demo URL   : http://#{guest_ip}"
-puts "Admin Page : http://#{guest_ip}/appointments
+puts "Admin Page : http://#{guest_ip}/appointments"
 puts "PHP Info   : http://#{guest_ip}/info.php"
 puts "-------------------------------------------------"
