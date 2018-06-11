@@ -3,7 +3,7 @@
     vagrant up
     vagrant ssh
 
-# Nginx is installed for you in this lesson.  Proceed with the followings
+# Nginx is installed for you in this lesson.  Proceed with the following
 # steps to configure a virtual host
 
 # RUN THESE COMMANDS ON THE VIRTUAL MACHINE
