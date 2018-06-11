@@ -26,7 +26,7 @@
 		table td {
 			transition: all .5s;
 		}
-		
+
 		/* Table */
 		.data-table {
 			border-collapse: collapse;
@@ -34,7 +34,7 @@
 			min-width: 537px;
 		}
 
-		.data-table th, 
+		.data-table th,
 		.data-table td {
 			border: 1px solid #e1edff;
 			padding: 7px 17px;
