@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
 end
 
 puts "-------------------------------------------------"
-puts "Demo URL : http://#{guest_ip}"
-puts "PHP Info : http://#{guest_ip}/info.php"
+puts "Demo URL   : http://#{guest_ip}"
+puts "Admin Page : http://#{guest_ip}/appointments"
+puts "PHP Info   : http://#{guest_ip}/info.php"
 puts "-------------------------------------------------"
