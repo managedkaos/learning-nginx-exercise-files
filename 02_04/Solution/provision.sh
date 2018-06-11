@@ -20,7 +20,7 @@ find /var/www/wisdomdpetmed.local -type d -exec chmod 755 {} \; -print
 cp /vagrant/info.php /var/www/wisdomdpetmed.local
 chmod +r /var/www/wisdomdpetmed.local/info.php
 
-# Install the php admin script
+# Install the appointments script
 mkdir /var/www/wisdomdpetmed.local/appointments
 cp /vagrant/index.php /var/www/wisdomdpetmed.local/appointments
 chmod +r /var/www/wisdomdpetmed.local/appointments/index.php
