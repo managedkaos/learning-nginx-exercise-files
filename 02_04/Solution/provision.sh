@@ -21,9 +21,9 @@ cp /vagrant/info.php /var/www/wisdomdpetmed.local
 chmod +r /var/www/wisdomdpetmed.local/info.php
 
 # Install the php admin script
-mkdir /var/www/wisdomdpetmed.local/admin
-cp /vagrant/index.php /var/www/wisdomdpetmed.local/admin
-chmod +r /var/www/wisdomdpetmed.local/admin/index.php
+mkdir /var/www/wisdomdpetmed.local/appointments
+cp /vagrant/index.php /var/www/wisdomdpetmed.local/appointments
+chmod +r /var/www/wisdomdpetmed.local/appointments/index.php
 
 # Secure MySQL
 # !!Not for production use!! :D
