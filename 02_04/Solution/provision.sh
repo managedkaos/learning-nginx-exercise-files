@@ -11,19 +11,19 @@ unlink /etc/nginx/sites-enabled/default
 cp /vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 
 # Install the demo site
-mkdir /var/www/wisdomdpetmed.local
-unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/www/wisdomdpetmed.local
-find /var/www/wisdomdpetmed.local -type f -exec chmod 644 {} \; -print
-find /var/www/wisdomdpetmed.local -type d -exec chmod 755 {} \; -print
+mkdir /var/www/wisdompetmed.local
+unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/www/wisdompetmed.local
+find /var/www/wisdompetmed.local -type f -exec chmod 644 {} \; -print
+find /var/www/wisdompetmed.local -type d -exec chmod 755 {} \; -print
 
 # Install a php info script
-cp /vagrant/info.php /var/www/wisdomdpetmed.local
-chmod +r /var/www/wisdomdpetmed.local/info.php
+cp /vagrant/info.php /var/www/wisdompetmed.local
+chmod +r /var/www/wisdompetmed.local/info.php
 
 # Install the appointments script
-mkdir /var/www/wisdomdpetmed.local/appointments
-cp /vagrant/index.php /var/www/wisdomdpetmed.local/appointments
-chmod +r /var/www/wisdomdpetmed.local/appointments/index.php
+mkdir /var/www/wisdompetmed.local/appointments
+cp /vagrant/index.php /var/www/wisdompetmed.local/appointments
+chmod +r /var/www/wisdompetmed.local/appointments/index.php
 
 # Secure MySQL
 # !!Not for production use!! :D

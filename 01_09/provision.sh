@@ -11,10 +11,10 @@ unlink /etc/nginx/sites-enabled/default
 cp /vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 
 # Install the demo site
-mkdir /var/www/wisdomdpetmed.local
-unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/www/wisdomdpetmed.local
-find /var/www/wisdomdpetmed.local -type f -exec chmod 644 {} \; -print
-find /var/www/wisdomdpetmed.local -type d -exec chmod 755 {} \; -print
+mkdir /var/www/wisdompetmed.local
+unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/www/wisdompetmed.local
+find /var/www/wisdompetmed.local -type f -exec chmod 644 {} \; -print
+find /var/www/wisdompetmed.local -type d -exec chmod 755 {} \; -print
 
 # Restart and check the status of everything
 systemctl restart nginx

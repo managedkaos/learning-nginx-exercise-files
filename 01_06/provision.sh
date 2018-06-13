@@ -11,7 +11,7 @@ unlink /etc/nginx/sites-enabled/default
 cp /vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 
 # Install the demo site
-mkdir /var/www/wisdomdpetmed.local
+mkdir /var/www/wisdompetmed.local
 echo 'site coming soon' > /var/www/wisdompetmed.local/index.html
 
 # Restart and check the status of everything

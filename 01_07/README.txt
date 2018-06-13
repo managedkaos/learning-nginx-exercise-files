@@ -9,9 +9,9 @@
 # RUN THESE COMMANDS ON THE VIRTUAL MACHINE
     sudo su -
     apt-get install -y unzip
-    unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/www/wisdomdpetmed.local
-    find /var/www/wisdomdpetmed.local -type f -exec chmod 644 {} \; -print
-    find /var/www/wisdomdpetmed.local -type d -exec chmod 755 {} \; -print
+    unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/www/wisdompetmed.local
+    find /var/www/wisdompetmed.local -type f -exec chmod 644 {} \; -print
+    find /var/www/wisdompetmed.local -type d -exec chmod 755 {} \; -print
 
 # Open the site in your browser: http://192.168.0.3
 
