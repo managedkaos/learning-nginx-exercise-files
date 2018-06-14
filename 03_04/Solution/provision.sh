@@ -56,6 +56,11 @@ htpasswd -b -c /etc/nginx/passwords admin admin
 chown www-data /etc/nginx/passwords
 chmod 600 /etc/nginx/passwords
 
+# Create an SSL key and certificate
+openssl req -batch -x509 -nodes -days 365 -newkey rsa:2048 \
+	-keyout /etc/ssl/private/nginx.key \
+	-out /etc/ssl/certs/nginx.crt
+
 # Restart and check the status of everything
 systemctl restart nginx
 systemctl status nginx.service --no-pager
