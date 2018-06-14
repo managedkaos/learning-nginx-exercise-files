@@ -53,6 +53,7 @@ chmod +r /var/www/wisdompetmed.local/403.html
 
 # Create a password for securing locations
 htpasswd -b -c /etc/nginx/passwords admin admin
+chown www-data /etc/nginx/passwords
 chmod 600 /etc/nginx/passwords
 
 # Restart and check the status of everything
