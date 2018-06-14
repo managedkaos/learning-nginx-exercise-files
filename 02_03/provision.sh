@@ -1,7 +1,7 @@
 # Update the package references
 apt-get update
 
-# Install nginx, php, mariadb, and elinks
+# Install nginx and supporting packages
 apt-get install -y nginx unzip php-fpm php-mysql
 
 # Remove the default configuration

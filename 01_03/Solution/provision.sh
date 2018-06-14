@@ -1,7 +1,7 @@
 # Update the package references
 apt-get update
 
-# Install nginx, php, mariadb, and elinks
+# Install nginx and supporting packages
 apt-get install -y nginx
 
 # Restart and check the status of everything
