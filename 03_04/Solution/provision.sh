@@ -59,7 +59,7 @@ chmod 600 /etc/nginx/passwords
 # Create an SSL key and certificate
 openssl req -batch -x509 -nodes -days 365 -newkey rsa:2048 \
 	-keyout /etc/ssl/private/nginx.key \
-	-out /etc/ssl/certs/nginx.crt
+	-out /etc/ssl/certs/nginx.crt 2>/dev/null
 
 # Restart and check the status of everything
 systemctl restart nginx
