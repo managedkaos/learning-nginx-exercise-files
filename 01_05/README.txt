@@ -24,7 +24,7 @@
     systemctl reload nginx
     systemctl status nginx
     mkdir -p /var/www/wisdompetmed.local
-    echo ‘site coming soon’ > /var/www/wisdompetmed.local/index.html
+    echo 'site coming soon' > /var/www/wisdompetmed.local/index.html
 
 # Open the site in your browser: http://192.168.0.3
 
