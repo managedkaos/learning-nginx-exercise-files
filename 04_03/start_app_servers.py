@@ -19,23 +19,27 @@ class MyServer(BaseHTTPRequestHandler):
         <html>
             <head>
                 <style> h1 {
-                            font-size:200px;
+                            font-size:100px;
                             text-align:center;
                             margin-left:auto;
                             margin-right:auto
                            }
+                        p {
+                            font-size:20px;
+                            text-align:center;
+                          }
                 </style>
                 <title>%s</title>
             </head>
         <body>""" % "PORT" , "utf-8"))
         self.wfile.write(bytes("<body><h1>PORT</h1>", "utf-8"))
         self.wfile.write(bytes("<p>You accessed path: {}</p>".format(self.path), "utf-8"))
-        self.wfile.write(bytes("<p>{}</p>".format(time.asctime()), "utf-8"))
+        self.wfile.write(bytes("<p>{}</p>".format(time.strftime('%X')), "utf-8"))
         self.wfile.write(bytes("</body></html>", "utf-8"))
 
 def start_server(port):
     myServer = HTTPServer((hostName, port), MyServer)
-    print(time.asctime(), "Server Starts - http://%s:%s" % (hostName, port))
+    print(time.strftime('%X'), "App server started - http://%s:%s" % (hostName, port))
 
     try:
         myServer.serve_forever()
@@ -43,7 +47,7 @@ def start_server(port):
         pass
 
     myServer.server_close()
-    print(time.asctime(), "Server Stops - http://%s:%s" % (hostName, port))
+    print(time.strftime('%X'), "App server stopped - http://%s:%s" % (hostName, port))
 
 # list of the ports the servers will listen on
 PORTS = [7001, 7002, 7003]
