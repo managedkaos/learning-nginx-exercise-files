@@ -9,8 +9,8 @@ hostName = "localhost"
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
-        #for attr in dir(self):
-        #    print("self.%s = %r" % (attr, getattr(self, attr)))
+        #print(self.server)
+        #print(self.headers)
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
@@ -31,22 +31,21 @@ class MyServer(BaseHTTPRequestHandler):
                 </style>
                 <title>%s</title>
             </head>
-        <body>""" % "PORT" , "utf-8"))
-        self.wfile.write(bytes("<body><h1>PORT</h1>", "utf-8"))
-        self.wfile.write(bytes("<p>You accessed path: {}</p>".format(self.path), "utf-8"))
+        <body>""" % self.headers['Host'] , "utf-8"))
+        self.wfile.write(bytes("<body><h1>{}</h1>".format(self.request.getsockname()[1]), "utf-8"))
         self.wfile.write(bytes("<p>{}</p>".format(time.strftime('%X')), "utf-8"))
         self.wfile.write(bytes("</body></html>", "utf-8"))
 
 def start_server(port):
-    myServer = HTTPServer((hostName, port), MyServer)
+    this_server = HTTPServer((hostName, port), MyServer)
     print(time.strftime('%X'), "App server started - http://%s:%s" % (hostName, port))
 
     try:
-        myServer.serve_forever()
+        this_server.serve_forever()
     except KeyboardInterrupt:
         pass
 
-    myServer.server_close()
+    this_server.server_close()
     print(time.strftime('%X'), "App server stopped - http://%s:%s" % (hostName, port))
 
 # list of the ports the servers will listen on
