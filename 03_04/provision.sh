@@ -51,6 +51,10 @@ chmod +r /var/www/wisdompetmed.local/deny/index.html
 cp /vagrant/403.html /var/www/wisdompetmed.local
 chmod +r /var/www/wisdompetmed.local/403.html
 
+# Create 401.html
+cp /vagrant/401.html /var/www/wisdompetmed.local
+chmod +r /var/www/wisdompetmed.local/401.html
+
 # Create a password for securing locations
 htpasswd -b -c /etc/nginx/passwords admin admin
 chown www-data /etc/nginx/passwords
