@@ -33,7 +33,7 @@ class MyServer(BaseHTTPRequestHandler):
             </head>
         <body>""" % self.headers['Host'] , "utf-8"))
         self.wfile.write(bytes("<h1>{}</h1>".format(self.request.getsockname()[1]), "utf-8"))
-        self.wfile.write(bytes("<p>{}</p>".format(time.strftime('%X')), "utf-8"))
+        self.wfile.write(bytes("<h1>{}</h1>".format(time.strftime('%X')), "utf-8"))
         self.wfile.write(bytes("</body></html>", "utf-8"))
 
 def start_server(port):
