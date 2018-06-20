@@ -2,7 +2,7 @@
 apt-get update
 
 # Install nginx and supporting packages
-apt-get install -y nginx unzip php-fpm php-mysql mariadb-server mariadb-client apache2-utils
+apt-get install -y nginx unzip php-fpm php-mysql mariadb-server mariadb-client
 
 # Remove the default configuration
 unlink /etc/nginx/sites-enabled/default
@@ -50,15 +50,6 @@ echo "YOU'LL NEVER SEE THIS! :D" > /var/www/wisdompetmed.local/deny/index.html
 chmod +r /var/www/wisdompetmed.local/deny/index.html
 cp /vagrant/403.html /var/www/wisdompetmed.local
 chmod +r /var/www/wisdompetmed.local/403.html
-
-# Create 401.html
-cp /vagrant/401.html /var/www/wisdompetmed.local
-chmod +r /var/www/wisdompetmed.local/401.html
-
-# Create a password for securing locations
-htpasswd -b -c /etc/nginx/passwords admin admin
-chown www-data /etc/nginx/passwords
-chmod 600 /etc/nginx/passwords
 
 # Restart and check the status of everything
 systemctl restart nginx

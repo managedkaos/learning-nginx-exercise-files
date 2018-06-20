@@ -44,13 +44,6 @@ mysql -u root -p123 < /vagrant/appointment_database_setup.sql
 # Insert the appointment data
 mysql -u admin -padmin appointments < /vagrant/appointment_database.sql
 
-# Create the /denied directory and index file and 403.html
-mkdir /var/www/wisdompetmed.local/deny
-echo "YOU'LL NEVER SEE THIS! :D" > /var/www/wisdompetmed.local/deny/index.html
-chmod +r /var/www/wisdompetmed.local/deny/index.html
-cp /vagrant/403.html /var/www/wisdompetmed.local
-chmod +r /var/www/wisdompetmed.local/403.html
-
 # Restart and check the status of everything
 systemctl restart nginx
 systemctl status nginx.service --no-pager
