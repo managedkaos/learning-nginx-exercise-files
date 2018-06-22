@@ -6,7 +6,7 @@ definition for a virtual machine running Ubuntu 18.04 LTS.
 
 To boot the VM for a lesson, open a termnial (CMD or Powershell on Windows; Terminal on Mac) and navigate to the directory containing the Vagrantfile you want to use.
 
-Then run the following commands to boot up the VM:
+Then run the following command to boot up the VM:
 
         vagrant up
 
