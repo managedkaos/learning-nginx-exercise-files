@@ -14,6 +14,6 @@ cp /vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 mkdir /var/www/wisdompetmed.local
 echo 'site coming soon' > /var/www/wisdompetmed.local/index.html
 
-# Restart and check the status of everything
-systemctl restart nginx
-systemctl status nginx.service --no-pager
+
+
+

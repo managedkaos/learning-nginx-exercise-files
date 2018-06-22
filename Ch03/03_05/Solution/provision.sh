@@ -65,10 +65,10 @@ openssl req -batch -x509 -nodes -days 365 -newkey rsa:2048 \
 	-keyout /etc/ssl/private/nginx.key \
 	-out /etc/ssl/certs/nginx.crt 2>/dev/null
 
-# Restart and check the status of everything
-systemctl restart nginx
-systemctl status nginx.service --no-pager
-systemctl restart php7.2-fpm
-systemctl status php7.2-fpm.service --no-pager
-systemctl restart mysqld
-systemctl status mysqld.service --no-pager
+
+
+
+
+
+
+

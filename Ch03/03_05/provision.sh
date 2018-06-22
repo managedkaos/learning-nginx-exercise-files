@@ -60,10 +60,10 @@ htpasswd -b -c /etc/nginx/passwords admin admin
 chown www-data /etc/nginx/passwords
 chmod 600 /etc/nginx/passwords
 
-# Restart and check the status of everything
-systemctl restart nginx
-systemctl status nginx.service --no-pager
-systemctl restart php7.2-fpm
-systemctl status php7.2-fpm.service --no-pager
-systemctl restart mysqld
-systemctl status mysqld.service --no-pager
+
+
+
+
+
+
+

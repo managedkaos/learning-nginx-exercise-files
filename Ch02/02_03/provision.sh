@@ -20,8 +20,7 @@ find /var/www/wisdompetmed.local -type d -exec chmod 755 {} \; -print
 cp /vagrant/info.php /var/www/wisdompetmed.local
 chmod +r /var/www/wisdompetmed.local/info.php
 
-# Restart and check the status of everything
-systemctl restart nginx
-systemctl status nginx.service --no-pager
-systemctl restart php7.2-fpm
-systemctl status php7.2-fpm.service --no-pager
+
+
+
+
