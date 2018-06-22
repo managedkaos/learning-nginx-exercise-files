@@ -14,3 +14,4 @@ cp /vagrant/upstreams.conf /etc/nginx/conf.d
 
 
 /usr/bin/python3 /vagrant/start_app_servers.py &
+

@@ -8,4 +8,8 @@ end
 
 puts "-------------------------------------------------"
 puts "Proxy URL   : http://#{guest_ip}/proxy"
+puts "Proxy URL   : http://#{guest_ip}/roundrobin"
+puts "Proxy URL   : http://#{guest_ip}/leastconn"
+puts "Proxy URL   : http://#{guest_ip}/iphash"
+puts "Proxy URL   : http://#{guest_ip}/weighted"
 puts "-------------------------------------------------"

@@ -7,6 +7,9 @@ apt-get install -y nginx
 # Remove the default configuration
 unlink /etc/nginx/sites-enabled/default
 
+# Install the new configuration
+cp /vagrant/upstreams.conf /etc/nginx/conf.d
+
 
 
 
