@@ -36,3 +36,6 @@ EOF
 # Set up appointment database
 mysql -u root -p123 < /vagrant/appointment_database_setup.sql
 
+# Load the configuration
+systemctl reload nginx
+

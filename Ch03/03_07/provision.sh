@@ -60,3 +60,6 @@ htpasswd -b -c /etc/nginx/passwords admin admin
 chown www-data /etc/nginx/passwords
 chmod 600 /etc/nginx/passwords
 
+# Load the configuration
+systemctl reload nginx
+

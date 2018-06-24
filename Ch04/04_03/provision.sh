@@ -13,3 +13,6 @@ cp /vagrant/upstreams.conf /etc/nginx/conf.d
 # Start the app servers
 /usr/bin/python3 /vagrant/start_app_servers.py &
 
+# Load the configuration
+systemctl reload nginx
+
