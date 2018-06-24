@@ -16,6 +16,3 @@ unzip /vagrant/Wisdom_Pet_Medicine_responsive_website_LYNDA_12773.zip -d /var/ww
 find /var/www/wisdompetmed.local -type f -exec chmod 644 {} \; -print
 find /var/www/wisdompetmed.local -type d -exec chmod 755 {} \; -print
 
-
-
-

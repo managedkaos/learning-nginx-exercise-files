@@ -20,8 +20,3 @@ find /var/www/wisdompetmed.local -type d -exec chmod 755 {} \; -print
 cp /vagrant/info.php /var/www/wisdompetmed.local
 chmod +r /var/www/wisdompetmed.local/info.php
 
-
-
-
-
-

@@ -51,10 +51,3 @@ chmod +r /var/www/wisdompetmed.local/deny/index.html
 cp /vagrant/403.html /var/www/wisdompetmed.local
 chmod +r /var/www/wisdompetmed.local/403.html
 
-
-
-
-
-
-
-

@@ -14,6 +14,3 @@ cp /vagrant/wisdompetmed.local.conf /etc/nginx/conf.d
 mkdir /var/www/wisdompetmed.local
 echo 'site coming soon' > /var/www/wisdompetmed.local/index.html
 
-
-
-

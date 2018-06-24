@@ -4,6 +4,3 @@ apt-get update
 # Install nginx and supporting packages
 apt-get install -y nginx
 
-
-
-
