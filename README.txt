@@ -26,3 +26,7 @@ And to remove the VM, run:
 
         vagrant destroy
 
+# Solutions
+For each section, the "Solution" directory has a completed set up for that lesson.
+
+To use the soltion, first stop the VM running in the section directory.  Then cd into the Solution directory and run "vagrant up".  Investigate the solution by browsing to the demo site or logging in and taking a look at the configuration.
