@@ -1,0 +1,8 @@
+name: Inspec
+title: InSpec Profile
+maintainer: Managed Kaos
+copyright: Managed Kaos
+copyright_email: info@managedkaos.com
+license: MIT
+summary: An InSpec Compliance Profile
+version: 1.0
