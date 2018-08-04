@@ -4,7 +4,6 @@
     vagrant ssh
 
 # Nginx is installed and configured for you in this lesson.
-# The demo site is also installed and partially configured.
 # Proceed with the following steps to complete the configuration.
 
 # RUN THESE COMMANDS ON THE VIRTUAL MACHINE
