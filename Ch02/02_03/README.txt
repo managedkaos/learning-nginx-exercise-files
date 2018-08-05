@@ -31,7 +31,7 @@
 # Log out of the root account by entering CTRL+D
 
 # Connect to the database as the admin user:
-	mysql -u root -p
+	mysql -u admin -padmin
 
 # View the database with a few SQL commands:
 	Show databases;
