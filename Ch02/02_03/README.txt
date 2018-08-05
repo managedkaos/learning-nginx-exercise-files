@@ -23,7 +23,7 @@
 # Connect to the database as the root user with the mysql client.
 	mysql -u root -p
 
-# After logging in, creating a demo database:
+# After logging in, create a demo database and an admin user with these commands:
 	create database if not exists appointments;
 	create user if not exists 'admin';
 	grant all on appointments.* to 'admin'@'localhost' identified by 'admin';
@@ -33,7 +33,7 @@
 # Connect to the database as the admin user:
 	mysql -u root -p
 
-# check on the database we created with a few SQL commands:
+# View the database with a few SQL commands:
 	Show databases;
 	use appointments;
 	Show tables;
