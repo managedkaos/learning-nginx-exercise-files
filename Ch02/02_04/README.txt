@@ -3,7 +3,7 @@
     vagrant up
     vagrant ssh
 
-# Nginx and PHP are installed and configured for you in this lesson.
+# Nginx, PHP, amd MariaDB are installed and configured for you in this lesson.
 # Proceed with the following steps to complete the configuration.
 
 # RUN THESE COMMANDS ON THE VIRTUAL MACHINE
